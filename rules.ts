@@ -78,6 +78,7 @@ const rules: KarabinerRules[] = [
       s: app("Slack"),
       d: app("DBeaver"),
       f: app("Finder"),
+      t: app("Toggl Track"),
       o: app("Obsidian"),
       c: app("Calendar"),
       n: app("Notes"),
