@@ -5,12 +5,23 @@ import { createHyperSubLayers, app, open, rectangle, shell } from "./utils";
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself
   {
-    description: "Hyper Key (⌃⌥⇧⌘)",
+    description: "Control to Hyper Key (⌃⌥⇧⌘) and Caps Lock to Control",
     manipulators: [
       {
-        description: "Caps Lock -> Hyper Key",
+        description:
+          "Change caps_lock to left_control if pressed with other keys, change caps_lock to escape if pressed alone.",
         from: {
           key_code: "caps_lock",
+          modifiers: { optional: ["any"] },
+        },
+        to: [{ key_code: "left_control" }],
+        to_if_alone: [{ key_code: "escape" }],
+        type: "basic",
+      },
+      {
+        description: "Control -> Hyper Key",
+        from: {
+          key_code: "left_control",
           modifiers: {
             optional: ["any"],
           },
@@ -31,11 +42,11 @@ const rules: KarabinerRules[] = [
             },
           },
         ],
-        to_if_alone: [
-          {
-            key_code: "escape",
-          },
-        ],
+        // to_if_alone: [
+        //   {
+        //     key_code: "left_control",
+        //   },
+        // ],
         type: "basic",
       },
       //      {
@@ -56,48 +67,22 @@ const rules: KarabinerRules[] = [
     ],
   },
   ...createHyperSubLayers({
-    spacebar: open(
-      "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
-    ),
-    // b = "B"rowse
-    b: {
-      t: open("https://twitter.com"),
-      // Quarterly "P"lan
-      p: open("https://mxstbr.com/cal"),
-      y: open("https://news.ycombinator.com"),
-      f: open("https://facebook.com"),
-      r: open("https://reddit.com"),
-      h: open("https://hashnode.com/draft"),
-    },
-    // o = "Open" applications
-    o: {
-      1: app("1Password"),
-      g: app("Google Chrome"),
-      c: app("Notion Calendar"),
-      v: app("Zed"),
-      d: app("Discord"),
+    // Spacebar = Open applications
+    spacebar: {
+      1: app("Telegram"),
+      2: app("Spotify"),
+      j: app("Visual Studio Code"),
+      k: app("Arc"),
+      l: app("WezTerm"),
+      p: app("Postman"),
       s: app("Slack"),
-      e: app("Superhuman"),
-      n: app("Notion"),
-      t: app("Terminal"),
-      // Open todo list managed via *H*ypersonic
-      h: open(
-        "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
-      ),
-      z: app("zoom.us"),
-      // "M"arkdown (Reflect.app)
-      m: app("Reflect"),
-      r: app("Reflect"),
+      d: app("DBeaver"),
       f: app("Finder"),
-      // "i"Message
-      i: app("Texts"),
-      p: app("Spotify"),
-      a: app("iA Presenter"),
-      // "W"hatsApp has been replaced by Texts
-      w: open("Texts"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
-      ),
+      o: app("Obsidian"),
+      c: app("Calendar"),
+      n: app("Notes"),
+      r: app("Reminders"),
+      m: app("Mail"),
     },
 
     // TODO: This doesn't quite work yet.
@@ -114,72 +99,6 @@ const rules: KarabinerRules[] = [
     //     open -g "raycast://customWindowManagementCommand?position=topRight&relativeWidth=0.5"
     //   `,
     // },
-
-    // w = "Window" via rectangle.app
-    w: {
-      semicolon: {
-        description: "Window: Hide",
-        to: [
-          {
-            key_code: "h",
-            modifiers: ["right_command"],
-          },
-        ],
-      },
-      y: rectangle("previous-display"),
-      o: rectangle("next-display"),
-      k: rectangle("top-half"),
-      j: rectangle("bottom-half"),
-      h: rectangle("left-half"),
-      l: rectangle("right-half"),
-      f: rectangle("maximize"),
-      u: {
-        description: "Window: Previous Tab",
-        to: [
-          {
-            key_code: "tab",
-            modifiers: ["right_control", "right_shift"],
-          },
-        ],
-      },
-      i: {
-        description: "Window: Next Tab",
-        to: [
-          {
-            key_code: "tab",
-            modifiers: ["right_control"],
-          },
-        ],
-      },
-      n: {
-        description: "Window: Next Window",
-        to: [
-          {
-            key_code: "grave_accent_and_tilde",
-            modifiers: ["right_command"],
-          },
-        ],
-      },
-      b: {
-        description: "Window: Back",
-        to: [
-          {
-            key_code: "open_bracket",
-            modifiers: ["right_command"],
-          },
-        ],
-      },
-      // Note: No literal connection. Both f and n are already taken.
-      m: {
-        description: "Window: Forward",
-        to: [
-          {
-            key_code: "close_bracket",
-            modifiers: ["right_command"],
-          },
-        ],
-      },
-    },
 
     // s = "System"
     s: {
@@ -211,14 +130,6 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      l: {
-        to: [
-          {
-            key_code: "q",
-            modifiers: ["right_control", "right_command"],
-          },
-        ],
-      },
       p: {
         to: [
           {
@@ -226,37 +137,11 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      semicolon: {
-        to: [
-          {
-            key_code: "fastforward",
-          },
-        ],
-      },
-      e: open(
-        `raycast://extensions/thomas/elgato-key-light/toggle?launchType=background`
-      ),
-      // "D"o not disturb toggle
-      d: open(
-        `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`
-      ),
-      // "T"heme
-      t: open(`raycast://extensions/raycast/system/toggle-system-appearance`),
-      c: open("raycast://extensions/raycast/system/open-camera"),
-      // 'v'oice
-      v: {
-        to: [
-          {
-            key_code: "spacebar",
-            modifiers: ["left_option"],
-          },
-        ],
-      },
     },
 
-    // v = "moVe" which isn't "m" because we want it to be on the left hand
+    // z = "move" which isn't "m" because we want it to be on the left hand
     // so that hjkl work like they do in vim
-    v: {
+    z: {
       h: {
         to: [{ key_code: "left_arrow" }],
       },
@@ -268,24 +153,6 @@ const rules: KarabinerRules[] = [
       },
       l: {
         to: [{ key_code: "right_arrow" }],
-      },
-      // Magicmove via homerow.app
-      m: {
-        to: [{ key_code: "f", modifiers: ["right_control"] }],
-        // TODO: Trigger Vim Easymotion when VSCode is focused
-      },
-      // Scroll mode via homerow.app
-      s: {
-        to: [{ key_code: "j", modifiers: ["right_control"] }],
-      },
-      d: {
-        to: [{ key_code: "d", modifiers: ["right_shift", "right_command"] }],
-      },
-      u: {
-        to: [{ key_code: "page_down" }],
-      },
-      i: {
-        to: [{ key_code: "page_up" }],
       },
     },
 
@@ -305,51 +172,15 @@ const rules: KarabinerRules[] = [
     // r = "Raycast"
     r: {
       c: open("raycast://extensions/thomas/color-picker/pick-color"),
-      n: open("raycast://script-commands/dismiss-notifications"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink"
-      ),
       e: open(
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
       ),
       p: open("raycast://extensions/raycast/raycast/confetti"),
-      a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
-      s: open("raycast://extensions/peduarte/silent-mention/index"),
       h: open(
         "raycast://extensions/raycast/clipboard-history/clipboard-history"
       ),
-      1: open(
-        "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
-      ),
-      2: open(
-        "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2"
-      ),
     },
   }),
-  {
-    description: "Change Backspace to Spacebar when Minecraft is focused",
-    manipulators: [
-      {
-        type: "basic",
-        from: {
-          key_code: "delete_or_backspace",
-        },
-        to: [
-          {
-            key_code: "spacebar",
-          },
-        ],
-        conditions: [
-          {
-            type: "frontmost_application_if",
-            file_paths: [
-              "^/Users/mxstbr/Library/Application Support/minecraft/runtime/java-runtime-gamma/mac-os-arm64/java-runtime-gamma/jre.bundle/Contents/Home/bin/java$",
-            ],
-          },
-        ],
-      },
-    ],
-  },
 ];
 
 fs.writeFileSync(
