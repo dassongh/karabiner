@@ -28,33 +28,21 @@ const rules: KarabinerRules[] = [
     ],
   },
   ...createHyperSubLayers({
-    // Spacebar = Open applications
-    spacebar: {
-      1: app("Telegram"),
-      2: app("Spotify"),
-      j: app("Visual Studio Code"),
-      k: app("Arc"),
-      l: app("WezTerm"),
-      p: app("Postman"),
-      s: app("Slack"),
-      d: app("DBeaver"),
-      f: app("Finder"),
-      t: app("Toggl Track"),
-      o: app("Obsidian"),
-      c: app("Calendar"),
-      n: app("Notes"),
-      r: app("Reminders"),
-      m: app("Mail"),
-    },
-
-    // s = "System"
-    s: {
-      u: { to: [{ key_code: "volume_increment" }] },
-      j: { to: [{ key_code: "volume_decrement" }] },
-      i: { to: [{ key_code: "display_brightness_increment" }] },
-      k: { to: [{ key_code: "display_brightness_decrement" }] },
-      p: { to: [{ key_code: "play_or_pause" }] },
-    },
+    1: app("Telegram"),
+    2: app("Calendar"),
+    3: app("Spotify"),
+    x: app("WezTerm"),
+    c: app("Visual Studio Code"),
+    v: app("Arc"),
+    a: app("Postman"),
+    s: app("Slack"),
+    d: app("DBeaver"),
+    f: app("Finder"),
+    t: app("Toggl Track"),
+    o: app("Obsidian"),
+    n: app("Notes"),
+    r: app("Reminders"),
+    m: app("Mail"),
 
     // Vim movement
     h: { to: [{ key_code: "left_arrow" }] },
@@ -62,8 +50,17 @@ const rules: KarabinerRules[] = [
     k: { to: [{ key_code: "up_arrow" }] },
     l: { to: [{ key_code: "right_arrow" }] },
 
-    // r = "Raycast"
-    r: {
+    // Spacebar for system
+    spacebar: {
+      u: { to: [{ key_code: "volume_increment" }] },
+      j: { to: [{ key_code: "volume_decrement" }] },
+      i: { to: [{ key_code: "display_brightness_increment" }] },
+      k: { to: [{ key_code: "display_brightness_decrement" }] },
+      p: { to: [{ key_code: "play_or_pause" }] },
+    },
+
+    // Raycast
+    quote: {
       c: open("raycast://extensions/thomas/color-picker/pick-color"),
       e: open(
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
