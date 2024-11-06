@@ -154,6 +154,128 @@ function generateSubLayerVariableName(key: KeyCode) {
   return `hyper_sublayer_${key}`;
 }
 
+export function createAltSubLayer(
+  sublayer_key: KeyCode,
+  commands: { [key_code in KeyCode]?: LayerCommand },
+  allSubLayerVariables: string[]
+): Manipulator[] {
+  const subLayerVariableName = generateAltSubLayerVariableName(sublayer_key);
+
+  return [
+    // When Alt + sublayer_key is pressed, set the variable to 1; on key_up, set it to 0
+    {
+      description: `Toggle Alt sublayer ${sublayer_key}`,
+      type: "basic",
+      from: {
+        key_code: sublayer_key,
+        modifiers: {
+          mandatory: ["option"],
+          optional: ["any"],
+        },
+      },
+      to_after_key_up: [
+        {
+          set_variable: {
+            name: subLayerVariableName,
+            value: 0,
+          },
+        },
+      ],
+      to: [
+        {
+          set_variable: {
+            name: subLayerVariableName,
+            value: 1,
+          },
+        },
+      ],
+      conditions: [
+        ...allSubLayerVariables
+          .filter(
+            (subLayerVariable) => subLayerVariable !== subLayerVariableName
+          )
+          .map((subLayerVariable) => ({
+            type: "variable_if" as const,
+            name: subLayerVariable,
+            value: 0,
+          })),
+      ],
+    },
+    // Define the individual commands for the sublayer
+    ...(Object.keys(commands) as (keyof typeof commands)[]).map(
+      (command_key): Manipulator => ({
+        ...commands[command_key],
+        type: "basic" as const,
+        from: {
+          key_code: command_key,
+          modifiers: {
+            optional: ["any"],
+          },
+        },
+        conditions: [
+          {
+            type: "variable_if",
+            name: subLayerVariableName,
+            value: 1,
+          },
+        ],
+      })
+    ),
+  ];
+}
+
+/**
+ * Create all alt sublayers, reusing the existing LayerCommand interface
+ */
+export function createAltSubLayers(subLayers: {
+  [key_code in KeyCode]?:
+    | { [key_code in KeyCode]?: LayerCommand }
+    | LayerCommand;
+}): KarabinerRules[] {
+  const allSubLayerVariables = (
+    Object.keys(subLayers) as (keyof typeof subLayers)[]
+  ).map((sublayer_key) => generateAltSubLayerVariableName(sublayer_key));
+
+  return Object.entries(subLayers).map(([key, value]) =>
+    "to" in value
+      ? {
+          description: `Alt Key + ${key}`,
+          manipulators: [
+            {
+              ...value,
+              type: "basic" as const,
+              from: {
+                key_code: key as KeyCode,
+                modifiers: {
+                  mandatory: ["option"],
+                  optional: ["any"],
+                },
+              },
+              conditions: [
+                ...allSubLayerVariables.map((subLayerVariable) => ({
+                  type: "variable_if" as const,
+                  name: subLayerVariable,
+                  value: 0,
+                })),
+              ],
+            },
+          ],
+        }
+      : {
+          description: `Alt Key sublayer "${key}"`,
+          manipulators: createAltSubLayer(
+            key as KeyCode,
+            value,
+            allSubLayerVariables
+          ),
+        }
+  );
+}
+
+function generateAltSubLayerVariableName(key: KeyCode) {
+  return `alt_sublayer_${key}`;
+}
+
 /**
  * Shortcut for "open" shell command
  */

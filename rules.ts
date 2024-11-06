@@ -1,6 +1,6 @@
 import fs from "fs";
 import { KarabinerRules } from "./types";
-import { app, createHyperSubLayers, open } from "./utils";
+import { app, createAltSubLayers, createHyperSubLayers, open } from "./utils";
 
 const rules: KarabinerRules[] = [
   // Define the Hyper key
@@ -27,22 +27,40 @@ const rules: KarabinerRules[] = [
       },
     ],
   },
-  ...createHyperSubLayers({
-    1: app("Telegram"),
-    2: app("Calendar"),
+  ...createAltSubLayers({
+    2: app("Telegram"),
     3: app("Spotify"),
+    // z is reserved for main desktop
     x: app("WezTerm"),
     c: app("Visual Studio Code"),
     v: app("Arc"),
-    a: app("Postman"),
+    a: app("Calendar"),
     s: app("Slack"),
     d: app("DBeaver"),
     f: app("Finder"),
+    r: app("Reminders"),
     t: app("Toggl Track"),
     o: app("Obsidian"),
+    p: app("Postman"),
     n: app("Notes"),
-    r: app("Reminders"),
     m: app("Mail"),
+  }),
+  ...createHyperSubLayers({
+    // 1: app("Telegram"),
+    // 2: app("Calendar"),
+    // 3: app("Spotify"),
+    // x: app("WezTerm"),
+    // c: app("Visual Studio Code"),
+    // v: app("Arc"),
+    // a: app("Postman"),
+    // s: app("Slack"),
+    // d: app("DBeaver"),
+    // f: app("Finder"),
+    // t: app("Toggl Track"),
+    // o: app("Obsidian"),
+    // n: app("Notes"),
+    // r: app("Reminders"),
+    // m: app("Mail"),
 
     // Vim movement
     h: { to: [{ key_code: "left_arrow" }] },
