@@ -160,9 +160,7 @@ export function createAltSubLayer(
   allSubLayerVariables: string[]
 ): Manipulator[] {
   const subLayerVariableName = generateAltSubLayerVariableName(sublayer_key);
-
   return [
-    // When Alt + sublayer_key is pressed, set the variable to 1; on key_up, set it to 0
     {
       description: `Toggle Alt sublayer ${sublayer_key}`,
       type: "basic",
@@ -170,7 +168,7 @@ export function createAltSubLayer(
         key_code: sublayer_key,
         modifiers: {
           mandatory: ["option"],
-          optional: ["any"],
+          optional: [], // Disable all optional modifiers
         },
       },
       to_after_key_up: [
@@ -201,7 +199,6 @@ export function createAltSubLayer(
           })),
       ],
     },
-    // Define the individual commands for the sublayer
     ...(Object.keys(commands) as (keyof typeof commands)[]).map(
       (command_key): Manipulator => ({
         ...commands[command_key],
@@ -209,7 +206,8 @@ export function createAltSubLayer(
         from: {
           key_code: command_key,
           modifiers: {
-            optional: ["any"],
+            mandatory: [], // No mandatory modifiers for commands
+            optional: [], // No optional modifiers allowed
           },
         },
         conditions: [
@@ -224,9 +222,6 @@ export function createAltSubLayer(
   ];
 }
 
-/**
- * Create all alt sublayers, reusing the existing LayerCommand interface
- */
 export function createAltSubLayers(subLayers: {
   [key_code in KeyCode]?:
     | { [key_code in KeyCode]?: LayerCommand }
@@ -248,7 +243,7 @@ export function createAltSubLayers(subLayers: {
                 key_code: key as KeyCode,
                 modifiers: {
                   mandatory: ["option"],
-                  optional: ["any"],
+                  optional: [], // Remove optional modifiers
                 },
               },
               conditions: [
