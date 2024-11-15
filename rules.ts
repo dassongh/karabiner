@@ -28,6 +28,7 @@ const rules: KarabinerRules[] = [
     ],
   },
   ...createAltSubLayers({
+    1: app("Calendar"),
     2: app("Telegram"),
     3: app("Spotify"),
     // z is reserved for main desktop
@@ -35,7 +36,6 @@ const rules: KarabinerRules[] = [
     c: app("Visual Studio Code"),
     v: app("Arc"),
     b: app("Postman"),
-    a: app("Calendar"),
     s: app("Slack"),
     d: app("DBeaver"),
     f: app("Finder"),
