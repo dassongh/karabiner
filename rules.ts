@@ -5,7 +5,7 @@ import { app, createHyperSubLayers, open } from "./utils";
 const rules: KarabinerRules[] = [
   // Define the Hyper key
   {
-    description: "Control to Hyper Key (⌃⌥⇧⌘) and Caps Lock to Control",
+    description: "Tab to Hyper Key (⌃⌥⇧⌘) and Caps Lock to Control",
     manipulators: [
       {
         description:
@@ -50,7 +50,7 @@ const rules: KarabinerRules[] = [
     // number row
     1: app("WezTerm"),
     2: app("Arc"),
-    3: app("Visual Studio Code"),
+    3: app("Cursor"),
     4: app("DBeaver"),
     5: app("Postman"),
     6: app("Spotify"),
