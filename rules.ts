@@ -119,6 +119,7 @@ const rules: KarabinerRules[] = [
       h: open(
         "raycast://extensions/raycast/clipboard-history/clipboard-history"
       ),
+      o: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
     },
   }),
 ];
