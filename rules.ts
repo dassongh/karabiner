@@ -9,7 +9,7 @@ const rules: KarabinerRules[] = [
     manipulators: [
       {
         description:
-          "Change caps_lock to left_control if pressed with other keys, change caps_lock to escape if pressed alone.",
+          "CapsLock -> Left Control with other keys, CapsLock -> Escape alone",
         from: {
           key_code: "caps_lock",
           modifiers: { optional: ["any"] },
@@ -18,6 +18,17 @@ const rules: KarabinerRules[] = [
         to_if_alone: [{ key_code: "escape" }],
         type: "basic",
       },
+      // {
+      //   description:
+      //     "Left Shift -> CapsLock alone, Left Shift -> Shift with other keys",
+      //   from: {
+      //     key_code: "left_shift",
+      //     modifiers: { optional: ["any"] },
+      //   },
+      //   to: [{ key_code: "left_shift" }],
+      //   to_if_alone: [{ key_code: "caps_lock" }],
+      //   type: "basic",
+      // },
       {
         description: "Tab -> Hyper Key",
         from: { key_code: "tab", modifiers: { optional: ["any"] } },
@@ -51,8 +62,6 @@ const rules: KarabinerRules[] = [
     1: app("WezTerm"),
     2: app("Arc"),
     3: app("Cursor"),
-    4: app("DBeaver"),
-    5: app("Postman"),
     6: app("Spotify"),
 
     // top row
@@ -61,7 +70,9 @@ const rules: KarabinerRules[] = [
     o: app("Obsidian"),
 
     // center row
+    a: app("Postman"),
     s: app("Slack"),
+    d: app("DBeaver"),
 
     // bottom row
     c: app("Calendar"),
