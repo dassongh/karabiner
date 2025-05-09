@@ -18,17 +18,6 @@ const rules: KarabinerRules[] = [
         to_if_alone: [{ key_code: "escape" }],
         type: "basic",
       },
-      // {
-      //   description:
-      //     "Left Shift -> CapsLock alone, Left Shift -> Shift with other keys",
-      //   from: {
-      //     key_code: "left_shift",
-      //     modifiers: { optional: ["any"] },
-      //   },
-      //   to: [{ key_code: "left_shift" }],
-      //   to_if_alone: [{ key_code: "caps_lock" }],
-      //   type: "basic",
-      // },
       {
         description: "Tab -> Hyper Key",
         from: { key_code: "tab", modifiers: { optional: ["any"] } },
@@ -39,24 +28,33 @@ const rules: KarabinerRules[] = [
       },
     ],
   },
-  // ...createAltSubLayers({
-  //   1: app("Calendar"),
-  //   2: app("Telegram"),
-  //   3: app("Spotify"),
-  //   // z is reserved for main desktop
-  //   x: app("WezTerm"),
-  //   c: app("Visual Studio Code"),
-  //   v: app("Arc"),
-  //   b: app("Postman"),
-  //   s: app("Slack"),
-  //   d: app("DBeaver"),
-  //   f: app("Finder"),
-  //   r: app("Reminders"),
-  //   t: app("Toggl Track"),
-  //   o: app("Obsidian"),
-  //   n: app("Notes"),
-  //   m: app("Mail"),
-  // }),
+  // Test this later
+  // Vim-style arrow keys with ctrl
+  // {
+  //   description: "Control + Vim Keys (h,j,k,l) to Arrow Keys",
+  //   manipulators: [
+  //     {
+  //       from: { key_code: "h", modifiers: { mandatory: ["control"] } },
+  //       to: [{ key_code: "left_arrow" }],
+  //       type: "basic",
+  //     },
+  //     {
+  //       from: { key_code: "j", modifiers: { mandatory: ["control"] } },
+  //       to: [{ key_code: "down_arrow" }],
+  //       type: "basic",
+  //     },
+  //     {
+  //       from: { key_code: "k", modifiers: { mandatory: ["control"] } },
+  //       to: [{ key_code: "up_arrow" }],
+  //       type: "basic",
+  //     },
+  //     {
+  //       from: { key_code: "l", modifiers: { mandatory: ["control"] } },
+  //       to: [{ key_code: "right_arrow" }],
+  //       type: "basic",
+  //     },
+  //   ],
+  // },
   ...createHyperSubLayers({
     // number row
     1: app("WezTerm"),
@@ -79,31 +77,6 @@ const rules: KarabinerRules[] = [
     b: app("Reminders"),
     n: app("Notes"),
     m: app("Mail"),
-
-    // // Open apps
-    // e: {
-    //   // center row
-    //   // f: app("Finder"),
-    //   h: app("WezTerm"),
-    //   j: app("Visual Studio Code"),
-    //   k: app("Arc"),
-    //   l: app("DBeaver"),
-
-    //   // up row
-    //   w: app("Spotify"),
-
-    //   u: app("Slack"),
-    //   i: app("Telegram"),
-    //   e: app("Toggl Track"),
-    //   o: app("Obsidian"),
-    //   p: app("Postman"),
-
-    //   // bottom row
-    //   b: app("Reminders"),
-    //   n: app("Notes"),
-    //   m: app("Mail"),
-    //   comma: app("Calendar"),
-    // },
 
     // Vim movement
     h: { to: [{ key_code: "left_arrow" }] },
