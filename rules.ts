@@ -28,37 +28,10 @@ const rules: KarabinerRules[] = [
       },
     ],
   },
-  // Test this later
-  // Vim-style arrow keys with ctrl
-  // {
-  //   description: "Control + Vim Keys (h,j,k,l) to Arrow Keys",
-  //   manipulators: [
-  //     {
-  //       from: { key_code: "h", modifiers: { mandatory: ["control"] } },
-  //       to: [{ key_code: "left_arrow" }],
-  //       type: "basic",
-  //     },
-  //     {
-  //       from: { key_code: "j", modifiers: { mandatory: ["control"] } },
-  //       to: [{ key_code: "down_arrow" }],
-  //       type: "basic",
-  //     },
-  //     {
-  //       from: { key_code: "k", modifiers: { mandatory: ["control"] } },
-  //       to: [{ key_code: "up_arrow" }],
-  //       type: "basic",
-  //     },
-  //     {
-  //       from: { key_code: "l", modifiers: { mandatory: ["control"] } },
-  //       to: [{ key_code: "right_arrow" }],
-  //       type: "basic",
-  //     },
-  //   ],
-  // },
   ...createHyperSubLayers({
     // number row
     1: app("WezTerm"),
-    2: app("Arc"),
+    2: app("Zen"),
     3: app("Cursor"),
     6: app("Spotify"),
 
@@ -73,9 +46,9 @@ const rules: KarabinerRules[] = [
     d: app("DBeaver"),
 
     // bottom row
+    x: app("Reminders"),
+    z: app("Notes"),
     c: app("Calendar"),
-    b: app("Reminders"),
-    n: app("Notes"),
     m: app("Mail"),
 
     // Vim movement
