@@ -20,10 +20,15 @@ const rules: KarabinerRules[] = [
       },
       {
         description: "Tab -> Hyper Key",
-        from: { key_code: "tab", modifiers: { optional: ["any"] } },
-        to: [{ set_variable: { name: "hyper", value: 1 } }],
+        from: { key_code: "tab" },
+        to: [
+          {
+            key_code: "left_shift",
+            modifiers: ["left_command", "left_control", "left_option"],
+          },
+        ],
         to_if_alone: [{ key_code: "tab" }],
-        to_after_key_up: [{ set_variable: { name: "hyper", value: 0 } }],
+        // to_after_key_up: [{ set_variable: { name: "hyper", value: 0 } }],
         type: "basic",
       },
     ],
@@ -48,7 +53,6 @@ const rules: KarabinerRules[] = [
     // bottom row
     z: app("Notes"),
     x: app("Reminders"),
-    z: app("Notes"),
     c: app("Calendar"),
     b: app("Books"),
     m: app("Mail"),
