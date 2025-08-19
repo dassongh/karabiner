@@ -46,9 +46,11 @@ const rules: KarabinerRules[] = [
     d: app("DBeaver"),
 
     // bottom row
+    z: app("Notes"),
     x: app("Reminders"),
     z: app("Notes"),
     c: app("Calendar"),
+    b: app("Books"),
     m: app("Mail"),
 
     // Vim movement
@@ -64,6 +66,8 @@ const rules: KarabinerRules[] = [
       i: { to: [{ key_code: "display_brightness_increment" }] },
       k: { to: [{ key_code: "display_brightness_decrement" }] },
       p: { to: [{ key_code: "play_or_pause" }] },
+      b: { to: [{ key_code: "rewind" }] },
+      n: { to: [{ key_code: "fastforward" }] },
     },
 
     // Raycast
