@@ -48,7 +48,6 @@ const rules: KarabinerRules[] = [
     // bottom row
     z: app("Notes"),
     x: app("Reminders"),
-    z: app("Notes"),
     c: app("Calendar"),
     b: app("Books"),
     m: app("Mail"),
