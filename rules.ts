@@ -33,17 +33,20 @@ const rules: KarabinerRules[] = [
     1: app("WezTerm"),
     2: app("Zen"),
     3: app("Cursor"),
+    4: app("DBeaver"),
+
     6: app("Spotify"),
+    7: app("Postman"),
+
+    9: app("Telegram"),
+    0: app("Activity Monitor"),
 
     // top row
-    r: app("Telegram"),
     t: app("Toggl Track"),
     o: app("Obsidian"),
 
     // center row
-    a: app("Postman"),
     s: app("Slack"),
-    d: app("DBeaver"),
 
     // bottom row
     z: app("Notes"),
