@@ -47,6 +47,7 @@ const rules: KarabinerRules[] = [
 
     // center row
     s: app("Slack"),
+    f: app("Finder"),
 
     // bottom row
     z: app("Notes"),
@@ -74,7 +75,8 @@ const rules: KarabinerRules[] = [
 
     // Raycast
     q: {
-      c: open("raycast://extensions/thomas/color-picker/pick-color"),
+      equal_sign: open("raycast://extensions/mooxl/coffee/caffeinate"),
+      0: open("raycast://extensions/mooxl/coffee/decaffeinate"),
       e: open(
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
       ),
@@ -83,6 +85,7 @@ const rules: KarabinerRules[] = [
         "raycast://extensions/raycast/clipboard-history/clipboard-history"
       ),
       o: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
+      n: open("raycast://extensions/raycast/raycast-notes/raycast-notes"),
     },
   }),
 ];
