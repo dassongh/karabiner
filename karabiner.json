@@ -3549,13 +3549,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/mooxl/coffee/decaffeinate"
+                    "shell_command": "open raycast://extensions/mooxl/coffee/caffeinate"
                   }
                 ],
-                "description": "Open raycast://extensions/mooxl/coffee/decaffeinate",
+                "description": "Open raycast://extensions/mooxl/coffee/caffeinate",
                 "type": "basic",
                 "from": {
-                  "key_code": "0",
+                  "key_code": "equal_sign",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -3573,13 +3573,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/mooxl/coffee/caffeinate"
+                    "shell_command": "open raycast://extensions/mooxl/coffee/decaffeinate"
                   }
                 ],
-                "description": "Open raycast://extensions/mooxl/coffee/caffeinate",
+                "description": "Open raycast://extensions/mooxl/coffee/decaffeinate",
                 "type": "basic",
                 "from": {
-                  "key_code": "equal_sign",
+                  "key_code": "hyphen",
                   "modifiers": {
                     "optional": [
                       "any"

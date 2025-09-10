@@ -76,7 +76,7 @@ const rules: KarabinerRules[] = [
     // Raycast
     q: {
       equal_sign: open("raycast://extensions/mooxl/coffee/caffeinate"),
-      0: open("raycast://extensions/mooxl/coffee/decaffeinate"),
+      hyphen: open("raycast://extensions/mooxl/coffee/decaffeinate"),
       e: open(
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
       ),
