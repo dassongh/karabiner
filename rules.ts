@@ -26,14 +26,22 @@ const rules: KarabinerRules[] = [
         to_after_key_up: [{ set_variable: { name: "hyper", value: 0 } }],
         type: "basic",
       },
+      {
+        description: "Control -> Caps Lock",
+        from: { key_code: "right_control", modifiers: { optional: ["any"] } },
+        to: [{ key_code: "caps_lock" }],
+        // to_if_alone: [{ key_code: "caps_lock" }],
+        type: "basic",
+      },
     ],
   },
   ...createHyperSubLayers({
     // number row
-    1: app("WezTerm"),
+    1: app("Alacritty"),
     2: app("Zen"),
-    3: app("Cursor"),
+    3: app("Visual Studio Code"),
     4: app("DBeaver"),
+    5: app("Cursor"),
 
     6: app("Spotify"),
     7: app("Postman"),
@@ -46,6 +54,7 @@ const rules: KarabinerRules[] = [
     o: app("Obsidian"),
 
     // center row
+    a: app("ChatGPT"),
     s: app("Slack"),
     f: app("Finder"),
 
