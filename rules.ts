@@ -19,8 +19,8 @@ const rules: KarabinerRules[] = [
         type: "basic",
       },
       {
-        description: "Tab -> Hyper Key",
-        from: { key_code: "tab", modifiers: { optional: ["any"] } },
+        description: "Tab -> Hyper Key (except with Command for app switching)",
+        from: { key_code: "tab" },
         to: [{ set_variable: { name: "hyper", value: 1 } }],
         to_if_alone: [{ key_code: "tab" }],
         to_after_key_up: [{ set_variable: { name: "hyper", value: 0 } }],

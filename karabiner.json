@@ -33,14 +33,9 @@
                 "type": "basic"
               },
               {
-                "description": "Tab -> Hyper Key",
+                "description": "Tab -> Hyper Key (except with Command for app switching)",
                 "from": {
-                  "key_code": "tab",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
+                  "key_code": "tab"
                 },
                 "to": [
                   {
