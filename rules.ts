@@ -28,9 +28,8 @@ const rules: KarabinerRules[] = [
       },
       {
         description: "Control -> Caps Lock",
-        from: { key_code: "right_control", modifiers: { optional: ["any"] } },
+        from: { key_code: "right_command", modifiers: { mandatory: ["right_shift"], optional: ["any"] } },
         to: [{ key_code: "caps_lock" }],
-        // to_if_alone: [{ key_code: "caps_lock" }],
         type: "basic",
       },
     ],

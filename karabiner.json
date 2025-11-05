@@ -63,8 +63,11 @@
               {
                 "description": "Control -> Caps Lock",
                 "from": {
-                  "key_code": "right_control",
+                  "key_code": "right_command",
                   "modifiers": {
+                    "mandatory": [
+                      "right_shift"
+                    ],
                     "optional": [
                       "any"
                     ]
