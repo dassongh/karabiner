@@ -154,6 +154,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -179,22 +184,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -308,6 +308,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -333,22 +338,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -462,6 +462,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -487,22 +492,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -616,6 +616,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -641,22 +646,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -770,6 +770,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -795,22 +800,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -924,6 +924,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -949,22 +954,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -1078,6 +1078,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -1103,22 +1108,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -1232,6 +1232,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -1257,22 +1262,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -1386,6 +1386,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -1411,12 +1416,156 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
+                    "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_m",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_h",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_l",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_spacebar",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_q",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Hyper Key + r",
+            "manipulators": [
+              {
+                "to": [
+                  {
+                    "shell_command": "open -a 'Reminders.app'"
+                  }
+                ],
+                "description": "Open -a 'Reminders.app'",
+                "type": "basic",
+                "from": {
+                  "key_code": "r",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper",
+                    "value": 1
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_0",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_1",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_2",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_3",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_4",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_5",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_6",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_7",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_9",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_t",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_o",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_a",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_s",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -1427,6 +1576,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -1540,6 +1694,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -1565,22 +1724,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -1694,6 +1848,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -1719,22 +1878,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -1848,6 +2002,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -1873,22 +2032,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -2002,6 +2156,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -2027,22 +2186,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -2156,156 +2310,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_t",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_o",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_a",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_s",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_c",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_m",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_h",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_j",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_k",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_l",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_spacebar",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_q",
-                    "value": 0
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "description": "Hyper Key + z",
-            "manipulators": [
-              {
-                "to": [
-                  {
-                    "shell_command": "open -a 'Notes.app'"
-                  }
-                ],
-                "description": "Open -a 'Notes.app'",
-                "type": "basic",
-                "from": {
-                  "key_code": "z",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper",
-                    "value": 1
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_0",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_1",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_2",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_3",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_4",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_5",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_6",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_7",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_9",
+                    "name": "hyper_sublayer_r",
                     "value": 0
                   },
                   {
@@ -2335,16 +2340,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
@@ -2355,156 +2350,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_m",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_h",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_j",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_k",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_l",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_spacebar",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_q",
-                    "value": 0
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "description": "Hyper Key + x",
-            "manipulators": [
-              {
-                "to": [
-                  {
-                    "shell_command": "open -a 'Reminders.app'"
-                  }
-                ],
-                "description": "Open -a 'Reminders.app'",
-                "type": "basic",
-                "from": {
-                  "key_code": "x",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper",
-                    "value": 1
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_0",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_1",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_2",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_3",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_4",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_5",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_6",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_7",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_9",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_t",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_o",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_a",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_s",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_c",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -2618,6 +2464,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -2643,22 +2494,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -2772,6 +2618,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -2797,12 +2648,156 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
+                    "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_m",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_h",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_l",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_spacebar",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_q",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Hyper Key + n",
+            "manipulators": [
+              {
+                "to": [
+                  {
+                    "shell_command": "open -a 'Notes.app'"
+                  }
+                ],
+                "description": "Open -a 'Notes.app'",
+                "type": "basic",
+                "from": {
+                  "key_code": "n",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper",
+                    "value": 1
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_0",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_1",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_2",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_3",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_4",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_5",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_6",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_7",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_9",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_t",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_o",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_a",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_s",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -2813,6 +2808,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -2926,6 +2926,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -2951,22 +2956,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -3079,6 +3079,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -3104,22 +3109,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -3232,6 +3232,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -3257,22 +3262,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -3385,6 +3385,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -3410,22 +3415,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -3538,6 +3538,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -3563,22 +3568,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -3698,6 +3698,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -3723,22 +3728,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {
@@ -4019,6 +4019,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_t",
                     "value": 0
                   },
@@ -4044,22 +4049,17 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_z",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_c",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
                     "value": 0
                   },
                   {

@@ -28,7 +28,10 @@ const rules: KarabinerRules[] = [
       },
       {
         description: "Control -> Caps Lock",
-        from: { key_code: "right_command", modifiers: { mandatory: ["right_shift"], optional: ["any"] } },
+        from: {
+          key_code: "right_command",
+          modifiers: { mandatory: ["right_shift"], optional: ["any"] },
+        },
         to: [{ key_code: "caps_lock" }],
         type: "basic",
       },
@@ -49,6 +52,7 @@ const rules: KarabinerRules[] = [
     0: app("Activity Monitor"),
 
     // top row
+    r: app("Reminders"),
     t: app("Toggl Track"),
     o: app("Obsidian"),
 
@@ -58,10 +62,11 @@ const rules: KarabinerRules[] = [
     f: app("Finder"),
 
     // bottom row
-    z: app("Notes"),
-    x: app("Reminders"),
+    // z: app("Notes"),
+    // x: app("Reminders"),
     c: app("Calendar"),
     b: app("Books"),
+    n: app("Notes"),
     m: app("Mail"),
 
     // Vim movement
