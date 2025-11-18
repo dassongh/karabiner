@@ -59,6 +59,7 @@ const rules: KarabinerRules[] = [
     // center row
     a: app("ChatGPT"),
     s: app("Slack"),
+    d: app("Dictionary"),
     f: app("Finder"),
 
     // bottom row
