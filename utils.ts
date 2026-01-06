@@ -33,6 +33,7 @@ export function createHyperSubLayer(
       from: {
         key_code: sublayer_key,
         modifiers: {
+          mandatory: ["command", "control", "option", "shift"],
           optional: ["any"],
         },
       },
@@ -67,11 +68,6 @@ export function createHyperSubLayer(
             name: subLayerVariable,
             value: 0,
           })),
-        {
-          type: "variable_if",
-          name: "hyper",
-          value: 1,
-        },
       ],
     },
     // Define the individual commands that are meant to trigger in the sublayer
@@ -121,15 +117,11 @@ export function createHyperSubLayers(subLayers: {
               from: {
                 key_code: key as KeyCode,
                 modifiers: {
+                  mandatory: ["command", "control", "option", "shift"],
                   optional: ["any"],
                 },
               },
               conditions: [
-                {
-                  type: "variable_if",
-                  name: "hyper",
-                  value: 1,
-                },
                 ...allSubLayerVariables.map((subLayerVariable) => ({
                   type: "variable_if" as const,
                   name: subLayerVariable,
