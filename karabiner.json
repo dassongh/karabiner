@@ -1201,10 +1201,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'Postman.app'"
+                    "shell_command": "open -a 'Bruno.app'"
                   }
                 ],
-                "description": "Open -a 'Postman.app'",
+                "description": "Open -a 'Bruno.app'",
                 "type": "basic",
                 "from": {
                   "key_code": "7",

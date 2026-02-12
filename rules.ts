@@ -46,7 +46,7 @@ const rules: KarabinerRules[] = [
     5: app("Cursor"),
 
     6: app("Spotify"),
-    7: app("Postman"),
+    7: app("Bruno"),
 
     9: app("Telegram"),
     0: app("Activity Monitor"),
