@@ -76,8 +76,9 @@ const rules: KarabinerRules[] = [
       i: { to: [{ key_code: 'display_brightness_increment' }] },
       k: { to: [{ key_code: 'display_brightness_decrement' }] },
       p: { to: [{ key_code: 'play_or_pause' }] },
-      b: { to: [{ key_code: 'rewind' }] },
-      m: { to: [{ key_code: 'fastforward' }] },
+      m: { to: [{ key_code: 'mute' }] },
+      comma: { to: [{ key_code: 'rewind' }] },
+      period: { to: [{ key_code: 'fastforward' }] },
     },
 
     // Raycast
