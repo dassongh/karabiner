@@ -1,4 +1,4 @@
-import { To, KeyCode, Manipulator, KarabinerRules } from "./types";
+import { To, KeyCode, Manipulator, KarabinerRules } from './types';
 
 /**
  * Custom way to describe a command in a layer
@@ -21,7 +21,7 @@ type HyperKeySublayer = {
 export function createHyperSubLayer(
   sublayer_key: KeyCode,
   commands: HyperKeySublayer,
-  allSubLayerVariables: string[]
+  allSubLayerVariables: string[],
 ): Manipulator[] {
   const subLayerVariableName = generateSubLayerVariableName(sublayer_key);
 
@@ -29,11 +29,11 @@ export function createHyperSubLayer(
     // When Hyper + sublayer_key is pressed, set the variable to 1; on key_up, set it to 0 again
     {
       description: `Toggle Hyper sublayer ${sublayer_key}`,
-      type: "basic",
+      type: 'basic',
       from: {
         key_code: sublayer_key,
         modifiers: {
-          optional: ["any"],
+          optional: ['any'],
         },
       },
       to_after_key_up: [
@@ -59,17 +59,15 @@ export function createHyperSubLayer(
       // basically, only trigger a sublayer if no other sublayer is active
       conditions: [
         ...allSubLayerVariables
-          .filter(
-            (subLayerVariable) => subLayerVariable !== subLayerVariableName
-          )
+          .filter((subLayerVariable) => subLayerVariable !== subLayerVariableName)
           .map((subLayerVariable) => ({
-            type: "variable_if" as const,
+            type: 'variable_if' as const,
             name: subLayerVariable,
             value: 0,
           })),
         {
-          type: "variable_if",
-          name: "hyper",
+          type: 'variable_if',
+          name: 'hyper',
           value: 1,
         },
       ],
@@ -78,22 +76,22 @@ export function createHyperSubLayer(
     ...(Object.keys(commands) as (keyof typeof commands)[]).map(
       (command_key): Manipulator => ({
         ...commands[command_key],
-        type: "basic" as const,
+        type: 'basic' as const,
         from: {
           key_code: command_key,
           modifiers: {
-            optional: ["any"],
+            optional: ['any'],
           },
         },
         // Only trigger this command if the variable is 1 (i.e., if Hyper + sublayer is held)
         conditions: [
           {
-            type: "variable_if",
+            type: 'variable_if',
             name: subLayerVariableName,
             value: 1,
           },
         ],
-      })
+      }),
     ),
   ];
 }
@@ -106,32 +104,32 @@ export function createHyperSubLayer(
 export function createHyperSubLayers(subLayers: {
   [key_code in KeyCode]?: HyperKeySublayer | LayerCommand;
 }): KarabinerRules[] {
-  const allSubLayerVariables = (
-    Object.keys(subLayers) as (keyof typeof subLayers)[]
-  ).map((sublayer_key) => generateSubLayerVariableName(sublayer_key));
+  const allSubLayerVariables = (Object.keys(subLayers) as (keyof typeof subLayers)[]).map((sublayer_key) =>
+    generateSubLayerVariableName(sublayer_key),
+  );
 
   return Object.entries(subLayers).map(([key, value]) =>
-    "to" in value
+    'to' in value
       ? {
           description: `Hyper Key + ${key}`,
           manipulators: [
             {
               ...value,
-              type: "basic" as const,
+              type: 'basic' as const,
               from: {
                 key_code: key as KeyCode,
                 modifiers: {
-                  optional: ["any"],
+                  optional: ['any'],
                 },
               },
               conditions: [
                 {
-                  type: "variable_if",
-                  name: "hyper",
+                  type: 'variable_if',
+                  name: 'hyper',
                   value: 1,
                 },
                 ...allSubLayerVariables.map((subLayerVariable) => ({
-                  type: "variable_if" as const,
+                  type: 'variable_if' as const,
                   name: subLayerVariable,
                   value: 0,
                 })),
@@ -141,12 +139,8 @@ export function createHyperSubLayers(subLayers: {
         }
       : {
           description: `Hyper Key sublayer "${key}"`,
-          manipulators: createHyperSubLayer(
-            key as KeyCode,
-            value,
-            allSubLayerVariables
-          ),
-        }
+          manipulators: createHyperSubLayer(key as KeyCode, value, allSubLayerVariables),
+        },
   );
 }
 
@@ -157,17 +151,17 @@ function generateSubLayerVariableName(key: KeyCode) {
 export function createAltSubLayer(
   sublayer_key: KeyCode,
   commands: { [key_code in KeyCode]?: LayerCommand },
-  allSubLayerVariables: string[]
+  allSubLayerVariables: string[],
 ): Manipulator[] {
   const subLayerVariableName = generateAltSubLayerVariableName(sublayer_key);
   return [
     {
       description: `Toggle Alt sublayer ${sublayer_key}`,
-      type: "basic",
+      type: 'basic',
       from: {
         key_code: sublayer_key,
         modifiers: {
-          mandatory: ["option"],
+          mandatory: ['option'],
           optional: [], // Disable all optional modifiers
         },
       },
@@ -189,11 +183,9 @@ export function createAltSubLayer(
       ],
       conditions: [
         ...allSubLayerVariables
-          .filter(
-            (subLayerVariable) => subLayerVariable !== subLayerVariableName
-          )
+          .filter((subLayerVariable) => subLayerVariable !== subLayerVariableName)
           .map((subLayerVariable) => ({
-            type: "variable_if" as const,
+            type: 'variable_if' as const,
             name: subLayerVariable,
             value: 0,
           })),
@@ -202,7 +194,7 @@ export function createAltSubLayer(
     ...(Object.keys(commands) as (keyof typeof commands)[]).map(
       (command_key): Manipulator => ({
         ...commands[command_key],
-        type: "basic" as const,
+        type: 'basic' as const,
         from: {
           key_code: command_key,
           modifiers: {
@@ -212,43 +204,41 @@ export function createAltSubLayer(
         },
         conditions: [
           {
-            type: "variable_if",
+            type: 'variable_if',
             name: subLayerVariableName,
             value: 1,
           },
         ],
-      })
+      }),
     ),
   ];
 }
 
 export function createAltSubLayers(subLayers: {
-  [key_code in KeyCode]?:
-    | { [key_code in KeyCode]?: LayerCommand }
-    | LayerCommand;
+  [key_code in KeyCode]?: { [key_code in KeyCode]?: LayerCommand } | LayerCommand;
 }): KarabinerRules[] {
-  const allSubLayerVariables = (
-    Object.keys(subLayers) as (keyof typeof subLayers)[]
-  ).map((sublayer_key) => generateAltSubLayerVariableName(sublayer_key));
+  const allSubLayerVariables = (Object.keys(subLayers) as (keyof typeof subLayers)[]).map((sublayer_key) =>
+    generateAltSubLayerVariableName(sublayer_key),
+  );
 
   return Object.entries(subLayers).map(([key, value]) =>
-    "to" in value
+    'to' in value
       ? {
           description: `Alt Key + ${key}`,
           manipulators: [
             {
               ...value,
-              type: "basic" as const,
+              type: 'basic' as const,
               from: {
                 key_code: key as KeyCode,
                 modifiers: {
-                  mandatory: ["option"],
+                  mandatory: ['option'],
                   optional: [], // Remove optional modifiers
                 },
               },
               conditions: [
                 ...allSubLayerVariables.map((subLayerVariable) => ({
-                  type: "variable_if" as const,
+                  type: 'variable_if' as const,
                   name: subLayerVariable,
                   value: 0,
                 })),
@@ -258,12 +248,8 @@ export function createAltSubLayers(subLayers: {
         }
       : {
           description: `Alt Key sublayer "${key}"`,
-          manipulators: createAltSubLayer(
-            key as KeyCode,
-            value,
-            allSubLayerVariables
-          ),
-        }
+          manipulators: createAltSubLayer(key as KeyCode, value, allSubLayerVariables),
+        },
   );
 }
 
@@ -279,7 +265,7 @@ export function open(...what: string[]): LayerCommand {
     to: what.map((w) => ({
       shell_command: `open ${w}`,
     })),
-    description: `Open ${what.join(" & ")}`,
+    description: `Open ${what.join(' & ')}`,
   };
 }
 
@@ -287,15 +273,10 @@ export function open(...what: string[]): LayerCommand {
  * Utility function to create a LayerCommand from a tagged template literal
  * where each line is a shell command to be executed.
  */
-export function shell(
-  strings: TemplateStringsArray,
-  ...values: any[]
-): LayerCommand {
+export function shell(strings: TemplateStringsArray, ...values: any[]): LayerCommand {
   const commands = strings.reduce((acc, str, i) => {
-    const value = i < values.length ? values[i] : "";
-    const lines = (str + value)
-      .split("\n")
-      .filter((line) => line.trim() !== "");
+    const value = i < values.length ? values[i] : '';
+    const lines = (str + value).split('\n').filter((line) => line.trim() !== '');
     acc.push(...lines);
     return acc;
   }, [] as string[]);
@@ -304,7 +285,7 @@ export function shell(
     to: commands.map((command) => ({
       shell_command: command.trim(),
     })),
-    description: commands.join(" && "),
+    description: commands.join(' && '),
   };
 }
 
