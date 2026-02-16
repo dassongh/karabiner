@@ -9,10 +9,7 @@ const rules: KarabinerRules[] = [
     manipulators: [
       {
         description: 'CapsLock -> Left Control with other keys, CapsLock -> Escape alone',
-        from: {
-          key_code: 'caps_lock',
-          modifiers: { optional: ['any'] },
-        },
+        from: { key_code: 'caps_lock', modifiers: { optional: ['any'] } },
         to: [{ key_code: 'left_control' }],
         to_if_alone: [{ key_code: 'escape' }],
         type: 'basic',
@@ -80,7 +77,7 @@ const rules: KarabinerRules[] = [
       k: { to: [{ key_code: 'display_brightness_decrement' }] },
       p: { to: [{ key_code: 'play_or_pause' }] },
       b: { to: [{ key_code: 'rewind' }] },
-      n: { to: [{ key_code: 'fastforward' }] },
+      m: { to: [{ key_code: 'fastforward' }] },
     },
 
     // Raycast
