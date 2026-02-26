@@ -1042,10 +1042,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'Spotify.app'"
+                    "shell_command": "open -a 'Bruno.app'"
                   }
                 ],
-                "description": "Open -a 'Spotify.app'",
+                "description": "Open -a 'Bruno.app'",
                 "type": "basic",
                 "from": {
                   "key_code": "6",
@@ -1201,10 +1201,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'Bruno.app'"
+                    "shell_command": "open -a 'Spotify.app'"
                   }
                 ],
-                "description": "Open -a 'Bruno.app'",
+                "description": "Open -a 'Spotify.app'",
                 "type": "basic",
                 "from": {
                   "key_code": "7",

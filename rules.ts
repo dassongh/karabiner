@@ -37,9 +37,9 @@ const rules: KarabinerRules[] = [
     3: app('Visual Studio Code'),
     4: app('DBeaver'),
     5: app('Cursor'),
+    6: app('Bruno'),
 
-    6: app('Spotify'),
-    7: app('Bruno'),
+    7: app('Spotify'),
 
     9: app('Telegram'),
     0: app('Activity Monitor'),
