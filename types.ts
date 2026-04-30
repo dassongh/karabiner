@@ -125,6 +125,7 @@ export interface Modifiers {
 export interface To {
   key_code?: KeyCode;
   modifiers?: ModifiersKeys[];
+  lazy?: boolean;
   shell_command?: string;
   set_variable?: {
     name: string;

@@ -13,6 +13,18 @@ type HyperKeySublayer = {
   [key_code in KeyCode]?: LayerCommand;
 };
 
+const HYPER_MODIFIERS: NonNullable<To['modifiers']> = ['left_control', 'left_option', 'left_shift', 'left_command'];
+
+function fromKeyWithHyperModifiers(key_code: KeyCode): Manipulator['from'] {
+  return {
+    key_code,
+    modifiers: {
+      mandatory: [...HYPER_MODIFIERS],
+      optional: ['any'],
+    },
+  };
+}
+
 /**
  * Create a Hyper Key sublayer, where every command is prefixed with a key
  * e.g. Hyper + O ("Open") is the "open applications" layer, I can press
@@ -30,12 +42,7 @@ export function createHyperSubLayer(
     {
       description: `Toggle Hyper sublayer ${sublayer_key}`,
       type: 'basic',
-      from: {
-        key_code: sublayer_key,
-        modifiers: {
-          optional: ['any'],
-        },
-      },
+      from: fromKeyWithHyperModifiers(sublayer_key),
       to_after_key_up: [
         {
           set_variable: {
@@ -77,12 +84,7 @@ export function createHyperSubLayer(
       (command_key): Manipulator => ({
         ...commands[command_key],
         type: 'basic' as const,
-        from: {
-          key_code: command_key,
-          modifiers: {
-            optional: ['any'],
-          },
-        },
+        from: fromKeyWithHyperModifiers(command_key as KeyCode),
         // Only trigger this command if the variable is 1 (i.e., if Hyper + sublayer is held)
         conditions: [
           {
@@ -116,12 +118,7 @@ export function createHyperSubLayers(subLayers: {
             {
               ...value,
               type: 'basic' as const,
-              from: {
-                key_code: key as KeyCode,
-                modifiers: {
-                  optional: ['any'],
-                },
-              },
+              from: fromKeyWithHyperModifiers(key as KeyCode),
               conditions: [
                 {
                   type: 'variable_if',

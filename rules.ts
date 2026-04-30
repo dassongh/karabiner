@@ -15,9 +15,16 @@ const rules: KarabinerRules[] = [
         type: 'basic',
       },
       {
-        description: 'Tab -> Hyper Key (except with Command for app switching)',
+        description: 'Tab -> Hyper Key (⌃⌥⇧⌘, except with Command for app switching)',
         from: { key_code: 'tab' },
-        to: [{ set_variable: { name: 'hyper', value: 1 } }],
+        to: [
+          { set_variable: { name: 'hyper', value: 1 } },
+          {
+            key_code: 'left_shift',
+            modifiers: ['left_control', 'left_option', 'left_command'],
+            lazy: true, // it will fire only in combination with other key presses
+          },
+        ],
         to_if_alone: [{ key_code: 'tab' }],
         to_after_key_up: [{ set_variable: { name: 'hyper', value: 0 } }],
         type: 'basic',
