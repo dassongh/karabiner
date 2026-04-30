@@ -38,45 +38,48 @@ const rules: KarabinerRules[] = [
     ],
   },
   ...createHyperSubLayers({
-    // number row
-    1: app('Alacritty'),
-    2: app('Zen'),
-    3: app('Visual Studio Code'),
-    4: app('DBeaver'),
-    5: app('Codex'),
-    6: app('Bruno'),
-
-    7: app('Spotify'),
-
-    9: app('Telegram'),
     0: app('Activity Monitor'),
 
-    // top row
-    r: app('Reminders'),
-    t: app('Toggl Track'),
-    o: app('Obsidian'),
+    // external
+    // s: TypeWhisper
 
-    // center row
-    a: app('ChatGPT'),
-    s: app('Slack'),
-    d: app('Dictionary'),
-    f: app('Finder'),
-
-    // bottom row
-    // z: app("Notes"),
-    // x: app("Reminders"),
-    c: app('Calendar'),
-    b: app('Books'),
-    n: app('Notes'),
-    m: app('Mail'),
-
-    // Vim movement
+    // movement
     h: { to: [{ key_code: 'left_arrow' }] },
     j: { to: [{ key_code: 'down_arrow' }] },
     k: { to: [{ key_code: 'up_arrow' }] },
     l: { to: [{ key_code: 'right_arrow' }] },
 
-    // Spacebar for system
+    // Open
+    o: {
+      // number row
+      1: app('Alacritty'),
+      2: app('Zen'),
+      3: app('Visual Studio Code'),
+      4: app('DBeaver'),
+      5: app('Codex'),
+      6: app('Bruno'),
+      7: app('Spotify'),
+      8: app('Obsidian'),
+      9: app('Telegram'),
+
+      // top row
+      r: app('Reminders'),
+      t: app('Toggl Track'),
+
+      // center row
+      a: app('ChatGPT'),
+      s: app('Slack'),
+      d: app('Dictionary'),
+      f: app('Finder'),
+
+      // bottom row
+      c: app('Calendar'),
+      b: app('Books'),
+      n: app('Notes'),
+      m: app('Mail'),
+    },
+
+    // System
     spacebar: {
       u: { to: [{ key_code: 'volume_increment' }] },
       j: { to: [{ key_code: 'volume_decrement' }] },
@@ -95,7 +98,6 @@ const rules: KarabinerRules[] = [
       e: open('raycast://extensions/raycast/emoji-symbols/search-emoji-symbols'),
       p: open('raycast://extensions/raycast/raycast/confetti'),
       h: open('raycast://extensions/raycast/clipboard-history/clipboard-history'),
-      o: open('raycast://extensions/raycast/raycast-ai/ai-chat'),
       n: open('raycast://extensions/raycast/raycast-notes/raycast-notes'),
     },
   }),
