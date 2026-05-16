@@ -1508,10 +1508,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/mooxl/coffee/caffeinate"
+                    "shell_command": "open raycast-x://extensions/mooxl/coffee/caffeinate"
                   }
                 ],
-                "description": "Open raycast://extensions/mooxl/coffee/caffeinate",
+                "description": "Open raycast-x://extensions/mooxl/coffee/caffeinate",
                 "type": "basic",
                 "from": {
                   "key_code": "equal_sign",
@@ -1538,10 +1538,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/mooxl/coffee/decaffeinate"
+                    "shell_command": "open raycast-x://extensions/mooxl/coffee/decaffeinate"
                   }
                 ],
-                "description": "Open raycast://extensions/mooxl/coffee/decaffeinate",
+                "description": "Open raycast-x://extensions/mooxl/coffee/decaffeinate",
                 "type": "basic",
                 "from": {
                   "key_code": "hyphen",
@@ -1568,10 +1568,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+                    "shell_command": "open raycast-x://extensions/raycast/emoji-symbols/search-emoji-symbols"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/emoji-symbols/search-emoji-symbols",
+                "description": "Open raycast-x://extensions/raycast/emoji-symbols/search-emoji-symbols",
                 "type": "basic",
                 "from": {
                   "key_code": "e",
@@ -1598,10 +1598,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/raycast/confetti"
+                    "shell_command": "open raycast-x://extensions/raycast/raycast/confetti"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/raycast/confetti",
+                "description": "Open raycast-x://extensions/raycast/raycast/confetti",
                 "type": "basic",
                 "from": {
                   "key_code": "p",
@@ -1628,10 +1628,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/clipboard-history/clipboard-history"
+                    "shell_command": "open raycast-x://extensions/raycast/clipboard-history/clipboard-history"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/clipboard-history/clipboard-history",
+                "description": "Open raycast-x://extensions/raycast/clipboard-history/clipboard-history",
                 "type": "basic",
                 "from": {
                   "key_code": "h",
@@ -1658,10 +1658,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/raycast-notes/raycast-notes"
+                    "shell_command": "open raycast-x://extensions/raycast/raycast-notes/raycast-notes"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/raycast-notes/raycast-notes",
+                "description": "Open raycast-x://extensions/raycast/raycast-notes/raycast-notes",
                 "type": "basic",
                 "from": {
                   "key_code": "n",

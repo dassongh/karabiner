@@ -93,12 +93,12 @@ const rules: KarabinerRules[] = [
 
     // Raycast
     q: {
-      equal_sign: open('raycast://extensions/mooxl/coffee/caffeinate'),
-      hyphen: open('raycast://extensions/mooxl/coffee/decaffeinate'),
-      e: open('raycast://extensions/raycast/emoji-symbols/search-emoji-symbols'),
-      p: open('raycast://extensions/raycast/raycast/confetti'),
-      h: open('raycast://extensions/raycast/clipboard-history/clipboard-history'),
-      n: open('raycast://extensions/raycast/raycast-notes/raycast-notes'),
+      equal_sign: open('raycast-x://extensions/mooxl/coffee/caffeinate'),
+      hyphen: open('raycast-x://extensions/mooxl/coffee/decaffeinate'),
+      e: open('raycast-x://extensions/raycast/emoji-symbols/search-emoji-symbols'),
+      p: open('raycast-x://extensions/raycast/raycast/confetti'),
+      h: open('raycast-x://extensions/raycast/clipboard-history/clipboard-history'),
+      n: open('raycast-x://extensions/raycast/raycast-notes/raycast-notes'),
     },
   }),
 ];
